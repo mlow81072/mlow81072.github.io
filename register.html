@@ -5,6 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_page.eac687e0.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.c03fd5dc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.35a29703.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.01e2f692.js">
@@ -12,14 +13,26 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/layout.svelte.f947655f.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.6ceb228a.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/register-page.svelte.355db121.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Register</h1>
+
+<form method="POST" class="svelte-1c8hfvq"><label class="svelte-1c8hfvq"><img src="user.svg">
+    <input type="text"></label>
+
+  <label class="svelte-1c8hfvq"><img src="shield.svg">
+    <input type="password" id="input-password"></label>
+
+  <label class="svelte-1c8hfvq"><img src="shield.svg">
+    <input type="password" id="input-password-confirm"></label>
+
+  <button type="submit">Register</button>
+
+</form>
 
 
 			
@@ -38,7 +51,7 @@
 						import("./_app/immutable/entry/app.35585f16.js")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_1sw33yv.element, {
-							node_ids: [0, 2],
+							node_ids: [0, 4],
 							data,
 							form: null,
 							error: null
